@@ -7,8 +7,8 @@ Calcratelimit is a POC for calculcation based rate limiting. This can be of use 
 1. A client has to make a call to the token endpoint. A random token is returned.
 2. The client creates an additional token such that sha512(token + additional token) starts with the string '1337'
 3. The client sends the original token + additional token to the API endpoint. Now the server will check:
-⋅⋅* If the token is the current token for the client's IP
-⋅⋅* If the two tokens create a hash that starts with '1337'
+  * If the token is the current token for the client's IP
+  * If the two tokens create a hash that starts with '1337'
 4. The server will respond perform the API calculations if the conditions from step 3 are met.
 
 Only one token per IP per token/API call is allowed. Before every token call and after every API the database is cleared for that IP.
