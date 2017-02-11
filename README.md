@@ -13,9 +13,6 @@ Calcratelimit is a POC for calculcation based rate limiting. This can be of use 
 
 Only one token per IP per token/API call is allowed. Before every token call and after every API the database is cleared for that IP.
 
-##Usage
-The file calcratelimitClient.py contains a working POC for communicating with calcratelimit.graa.nl. This API only returns a success message, but works with the code from this repo.
-
 ##License
 Calcratelimit is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License. This means you are free to:
 
