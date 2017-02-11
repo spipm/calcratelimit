@@ -44,7 +44,7 @@ class calcRatelimitClient(object):
 
 ratelimitClient = calcRatelimitClient()
 
-ratelimitClient.setTokenEndpoint("http://calcratelimit.graa.nl/tokenEndpoint.py")
-ratelimitClient.setAPIEndpoint("http://calcratelimit.graa.nl/apiEndpoint.py")
+ratelimitClient.setTokenEndpoint("http://node/tokenEndpoint.py")
+ratelimitClient.setAPIEndpoint("http://node/apiEndpoint.py")
 
 print ratelimitClient.performAPICall()
